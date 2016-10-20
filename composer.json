@@ -1,5 +1,5 @@
 {
-    "name": "qeti/simple-podata",
+    "name": "c-harris/POData-Simple",
     "description": "Library for simple use OData with POData library",
     "keywords": ["odata", "podata", "rest"],
     "homepage": "https://github.com/c-harris/PODataSimple",
@@ -25,7 +25,7 @@
         "psr-4": {
             "charrus\\SimplePOData\\": ""
         }
-    }
+    },
     "repositories": {
         "podata": {
             "type": "git",
