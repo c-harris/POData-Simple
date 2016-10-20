@@ -164,7 +164,6 @@ abstract class LaravelQueryProvider implements IQueryProvider
         $result = new QueryResult();
         $entityClassName = $resourceSet->getResourceType()->getInstanceType()->name;
         $entityName = $this->getEntityName($entityClassName);
-        $tableName = $this->getTableName($entityName);
 
         $option = null;
 
