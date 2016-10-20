@@ -81,26 +81,6 @@ abstract class LaravelQueryProvider implements IQueryProvider
         }
         return strtolower($tableName);
     }
-    /**
-     * Get part of SQL query with ORDER BY condition
-     *
-     * @param InternalOrderByInfo $orderBy Order by condition
-     *
-     * @return string ORDER BY condition
-     */
-    protected function getOrderByExpressionAsString(InternalOrderByInfo $orderBy)
-    {
-        $result = '';
-        foreach ($orderBy->getOrderByInfo()->getOrderByPathSegments() as $order) {
-            foreach ($order->getSubPathSegments() as $subOrder) {
-                $result .= $result ? ', ' : '';
-				$result .= "->orderBy('".$subOrder->getName()."', ".$order->isAscending() ? 'asc' : 'desc' . "')";
-//                $result .= $subOrder->getName();
-//                $result .= $order->isAscending() ? ' ASC' : ' DESC';
-            }
-        }
-        return $result;
-    }
 
 	 protected function getOrderByExpressionAsArray(InternalOrderByInfo $orderBy)
     {
