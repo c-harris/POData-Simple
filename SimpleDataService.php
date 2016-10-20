@@ -28,13 +28,12 @@ class SimpleDataService extends BaseService implements IService
 
     public $maxPageSize = 200;
   
-    public function __construct($db, SimpleMetadataProvider $metaProvider){
+    public function __construct($db, SimpleMetadataProvider $metaProvider) {
         $this->metaProvider = $metaProvider;
         if (!empty($db->queryProviderClassName)) {
             $queryProviderClassName = $db->queryProviderClassName;
             $this->queryProvider = new $queryProviderClassName($db);
-        }
-        else {
+        } else {
             $this->queryProvider = new QueryProvider($db);
         }
     }
