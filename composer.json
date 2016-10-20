@@ -1,0 +1,35 @@
+{
+    "name": "qeti/simple-podata",
+    "description": "Library for simple use OData with POData library",
+    "keywords": ["odata", "podata", "rest"],
+    "homepage": "https://github.com/c-harris/PODataSimple",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christopher Harris",
+            "email": "c.harris@communicationinnovations.com.au",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/c-harrs/PODataSimple/issues",
+        "source": "https://github.com/qeti/PODataSimple"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "c-harris/POData": "dev-master"
+
+    },
+    "autoload": {
+        "psr-4": {
+            "charrus\\SimplePOData\\": ""
+        }
+    }
+    "repositories": {
+        "podata": {
+            "type": "git",
+            "url": "git@github.com:c-harris/POData.git"
+        }
+    },
+}
