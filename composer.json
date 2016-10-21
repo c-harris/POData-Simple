@@ -13,8 +13,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/c-harrs/PODataSimple/issues",
-        "source": "https://github.com/qeti/PODataSimple"
+        "issues": "https://github.com/c-harris/POData-Simple/issues",
+        "source": "https://github.com/c-harris/POData-Simple"
     },
     "require": {
         "php": ">=5.4.0",
@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "charrus\\SimplePOData\\": ""
+            "charris\\PODataSimple\\": ""
         }
     },
     "repositories": {
