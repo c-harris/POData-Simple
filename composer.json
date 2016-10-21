@@ -16,6 +16,7 @@
         "issues": "https://github.com/c-harris/POData-Simple/issues",
         "source": "https://github.com/c-harris/POData-Simple"
     },
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0",
         "c-harris/POData": "dev-master"
