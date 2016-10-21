@@ -6,7 +6,7 @@ use POData\OperationContext\HTTPRequestMethod;
 use POData\OperationContext\IHTTPRequest;
 use POData\OperationContext\Web\IncomingRequest;
 
-class RequestAdapter extends IncomingRequest implements IHTTPRequest
+class SimpleRequestAdapter extends IncomingRequest implements IHTTPRequest
 {
     protected $request;
     public function __construct($request)
